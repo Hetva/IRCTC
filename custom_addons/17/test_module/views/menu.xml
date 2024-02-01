@@ -1,0 +1,16 @@
+<odoo>
+
+
+<!--    <menuitem id="satvik_rasoi"-->
+<!--                name="Satvik Rasoi" />-->
+
+<!--      <menuitem id="food_items"-->
+<!--                name="Food"-->
+<!--                parent="satvik_rasoi" />-->
+
+<!--      <menuitem id="food_orders"-->
+<!--                action="food_orders"-->
+<!--                name="Food Orders"-->
+<!--                parent="food_items"/>-->
+
+</odoo>

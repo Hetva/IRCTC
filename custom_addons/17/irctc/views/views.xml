@@ -1,0 +1,74 @@
+<odoo>
+  <data>
+<!--    &lt;!&ndash; explicit list view definition &ndash;&gt;-->
+
+<!--    <record model="ir.ui.view" id="irctc_list">-->
+<!--      <field name="name">IRCTC list</field>-->
+<!--      <field name="model">irctc.irctc</field>-->
+<!--      <field name="arch" type="xml">-->
+<!--        <tree>-->
+<!--          <field name="name"/>-->
+<!--          <field name="value"/>-->
+<!--          <field name="value2"/>-->
+<!--        </tree>-->
+<!--      </field>-->
+<!--    </record>-->
+
+
+    <!-- actions opening views on models -->
+
+<!--    <record model="ir.actions.act_window" id="irctc.action_window">-->
+<!--      <field name="name">IRCTC window</field>-->
+<!--      <field name="res_model">irctc.irctc</field>-->
+<!--      <field name="view_mode">tree,form</field>-->
+<!--    </record>-->
+
+
+    <!-- server action to the one above -->
+
+<!--    <record model="ir.actions.server" id="irctc.action_server">-->
+<!--      <field name="name">IRCTC server</field>-->
+<!--      <field name="model_id" ref="model_irctc_irctc"/>-->
+<!--      <field name="state">code</field>-->
+<!--      <field name="code">-->
+<!--        action = {-->
+<!--          "type": "ir.actions.act_window",-->
+<!--          "view_mode": "tree,form",-->
+<!--          "res_model": model._name,-->
+<!--        }-->
+<!--      </field>-->
+<!--    </record>-->
+
+
+    <!-- Top menu item -->
+
+<!--    <menuitem name="Awadh" id="irctc_menu_root"/>-->
+
+    <!-- menu categories -->
+
+<!--    -->
+<!--    -->
+<!--    <menuitem name="Passenger" id="irctc_menu_1" parent="irctc_menu_root"/>-->
+<!--    <menuitem name="Train" id="irctc_menu_2" parent="irctc_menu_root"/>-->
+<!--    <menuitem name="Booking Details" id="irctc_menu_3" parent="irctc_menu_root"/>-->
+<!--    <menuitem name="Station" id="irctc_menu_4" parent="irctc_menu_root"/>-->
+
+
+
+
+    <!-- actions -->
+
+
+
+
+<!--    <menuitem name="Passenger Details" id="irctc_menu_1_list" parent="irctc_menu_1"-->
+<!--              action="irctc.action_window"/>-->
+<!--    <menuitem name="Train Status" id="irctc" parent="irctc_menu_2"-->
+<!--              action="irctc.action_window"/>-->
+<!--    <menuitem name="Booking Details" id="irctc_menu_5" parent="irctc_menu_3"-->
+<!--              action="irctc.action_window"/>-->
+<!--    <menuitem name="Plathform details" id="irctc_menu_6" parent="irct_menu_4"-->
+<!--              action="irctc.action_window"/>-->
+
+  </data>
+</odoo>

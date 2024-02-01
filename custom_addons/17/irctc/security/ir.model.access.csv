@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_train_model,train.model,model_train_model,base.group_user,1,1,1,1
+access_station_model,station.model,model_station_model,base.group_user,1,1,1,1
+access_passengers_model,passengers.model,model_passengers_model,base.group_user,1,1,1,1
+access_booking_model,booking.model,model_booking_model,base.group_user,1,1,1,1
+
+access_timetable_model,timetable.model,model_timetable_model,base.group_user,1,1,1,1

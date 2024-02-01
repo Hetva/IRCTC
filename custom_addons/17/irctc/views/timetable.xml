@@ -1,0 +1,62 @@
+<!--<odoo>-->
+<!--    <data>-->
+<!--    &lt;!&ndash;  explicit list view definition  &ndash;&gt;-->
+<!--        <record model="ir.ui.view" id="timetable_list">-->
+<!--            <field name="name">timetable list</field>-->
+<!--            <field name="model">timetable.model</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <tree>-->
+<!--                <field name="train_id"/>-->
+<!--                <field name="train_name"/>-->
+<!--                <field name="station_name"/>-->
+<!--                <field name="train_arrival_time"/>-->
+<!--                <field name="train_arrival_date"/>-->
+<!--                <field name="train_half_time"/>-->
+<!--                <field name="train_departs"/>-->
+<!--                <field name="train_departs_time"/>-->
+<!--                <field name="train_departs_date"/>-->
+<!--                </tree>-->
+<!--            </field>-->
+<!--        </record>-->
+<!--    &lt;!&ndash;  actions opening views on models  &ndash;&gt;-->
+<!--        <record model="ir.actions.act_window" id="timetable_action_window">-->
+<!--        <field name="name">timetable list</field>-->
+<!--        <field name="res_model">timetable.model</field>-->
+<!--        <field name="view_mode">tree,form</field>-->
+<!--        </record>-->
+<!--    &lt;!&ndash;  Top menu item  &ndash;&gt;-->
+<!--&lt;!&ndash;        <menuitem name="irctc_menu" id="menu_id"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash;  action  &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <menuitem name="train" id="train_id" parent="menu_id" action="train_action_window"/>&ndash;&gt;-->
+<!--    </data>-->
+<!--</odoo>-->
+<odoo>
+    <data>
+
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="timetable_list">
+            <field name="name">timetable list</field>
+            <field name="model">timetable.model</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="train_id"/>
+                    <field name="train_name_id"/>
+                    <field name="station_name"/>
+                    <field name="train_arrival_time"/>
+                    <field name="train_arrival_date"/>
+                    <field name="train_halt_time"/>
+                    <field name="train_departs"/>
+                    <field name="train_departs_time"/>
+                    <field name="train_departs_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="timetable_action_window">
+            <field name="name">Timetable List</field>
+            <field name="res_model">timetable.model</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

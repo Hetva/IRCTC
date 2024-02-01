@@ -1,0 +1,33 @@
+<odoo>
+    <data>
+    <!-- Top menu item -->
+
+        <menuitem name="Awadh" id="irctc_menu_root"/>
+
+        <!-- menu categories -->
+
+
+
+        <menuitem name="Passenger" id="passenger_menu" parent="irctc_menu_root"/>
+        <menuitem name="Train" id="train_menu" parent="irctc_menu_root"/>
+        <menuitem name="Booking Details" id="booking_menu" parent="irctc_menu_root"/>
+        <menuitem name="Station" id="station_menu" parent="irctc_menu_root"/>
+
+
+
+
+        <!-- actions -->
+
+
+        <menuitem name="Passenger Details" id="irctc_menu_1_list" parent="passenger_menu"
+                  action="passengers_action_window"/>
+        <menuitem name="Train List" id="irctc" parent="train_menu"
+                  action="train_action_window"/>
+        <menuitem name="Train TimeTable" id="irctc_menu_3_list" parent="train_menu"
+                  action="timetable_action_window"/>
+        <menuitem name="Booking Details" id="irctc_menu_5" parent="booking_menu"
+                  action="booking_action_window"/>
+        <menuitem name="Station details" id="irctc_menu_6" parent="station_menu"
+                  action="station_action_window"/>
+    </data>
+</odoo>

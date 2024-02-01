@@ -1,0 +1,74 @@
+<odoo>
+    <data>
+<!--     Tree view for train model-->
+    <!--  explicit list view definition  -->
+        <record model="ir.ui.view" id="train_list">
+            <field name="name">train list</field>
+            <field name="model">train.model</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="train_id"/>
+                    <field name="train_name"/>
+                    <field name="train_arrival_id"/>
+                    <field name="train_arrival_time"/>
+                    <field name="train_arrival_date"/>
+                    <field name="train_destination_id"/>
+                    <field name="train_destination_time"/>
+                    <field name="train_destination_date"/>
+                    <field name="route" />
+<!--                    widget="many2many_tags"-->
+                    <field name="ticket_data"/>
+                </tree>
+            </field>
+        </record>
+
+<!--     Tree view for train model-->
+        <record model="ir.ui.view" id="train_form">
+            <field name="name">train form</field>
+            <field name="model">train.model</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="train_id"/>
+                                <field name="train_name"/>
+                                <field name="train_arrival_id"/>
+                                <field name="train_arrival_time"/>
+                            </group>
+                            <group>
+                                <field name="train_arrival_date"/>
+                                <field name="train_destination_id"/>
+                                <field name="train_destination_time"/>
+                                <field name="train_destination_date"/>
+                            </group>
+<!--                            <group>-->
+<!--                                <field name="route"/>-->
+<!--                            </group>-->
+                        </group>
+                        <notebook>
+                             <page string="Passengers Detail">
+                                  <field name="route"/>
+                             </page>
+                            <page string="Passengers Detail">
+                                 <field name="ticket_data"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    <!--  actions opening views on models  -->
+        <record model="ir.actions.act_window" id="train_action_window">
+        <field name="name">train_model list</field>
+        <field name="res_model">train.model</field>
+        <field name="view_mode">tree,form</field>
+        </record>
+    <!--  Top menu item  -->
+<!--        <menuitem name="irctc_menu" id="menu_id"/>-->
+<!--        &lt;!&ndash;  action  &ndash;&gt;-->
+<!--        <menuitem name="train" id="train_id" parent="menu_id" action="train_action_window"/>-->
+    </data>
+</odoo>

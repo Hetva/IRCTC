@@ -1,0 +1,47 @@
+<odoo>
+    <data>
+    <!--  explicit list view definition  -->
+        <record model="ir.ui.view" id="booking_list">
+            <field name="name">booking_model list</field>
+            <field name="model">booking.model</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="passenger_name_id"/>
+                    <field name="ticket_id"/>
+                    <field name="booking_train_id" widget="selection"/>
+                    <field name="booking_start_station_id"/>
+                    <field name="booking_dest_id"/>
+                    <field name="coach_number"/>
+                    <field name="seat_number"/>
+                    <field name="ticket_payment"/>
+                </tree>
+            </field>
+        </record>
+<!--         <record model="ir.ui.view" id="booking_list_form">-->
+<!--            <field name="name">booking_model list form</field>-->
+<!--            <field name="model">booking.model</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <form>-->
+<!--                    <field name="passenger_name_id"/>-->
+<!--                    <field name="ticket_id"/>-->
+<!--                    <field name="booking_train_id" widget="selection"/>-->
+<!--                    <field name="booking_start_station_id"/>-->
+<!--                    <field name="booking_dest_id"/>-->
+<!--                    <field name="coach_number"/>-->
+<!--                    <field name="seat_number"/>-->
+<!--                    <field name="ticket_payment"/>-->
+<!--                </form>-->
+<!--            </field>-->
+<!--        </record>-->
+    <!--  actions opening views on models  -->
+        <record model="ir.actions.act_window" id="booking_action_window">
+            <field name="name">booking_model list</field>
+            <field name="res_model">booking.model</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!--  Top menu item  -->
+        <!--     <menuitem name="irctc_menu" id="menu_id"/> -->
+        <!--  action  -->
+<!--        <menuitem name="booking" id="booking_id" parent="menu_id" action="booking_action_window"/>-->
+    </data>
+</odoo>

@@ -1,0 +1,33 @@
+<odoo>
+    <data>
+<!--  explicit list view definition  -->
+        <record model="ir.ui.view" id="passengers_list">
+            <field name="name">passengers_model list</field>
+            <field name="model">passengers.model</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="passengers_id"/>
+                    <field name="passengers_name"/>
+                    <field name="passengers_age"/>
+                    <field name="passengers_dob"/>
+                    <field name="passengers_gender"/>
+                    <field name="passengers_contact"/>
+                    <field name="passengers_email"/>
+<!--                    <field name="passengers_address"/>-->
+<!--                    <field name="passengers_pincode"/>-->
+
+                </tree>
+          </field>
+        </record>
+    <!--  actions opening views on models  -->
+        <record model="ir.actions.act_window" id="passengers_action_window">
+            <field name="name">passengers_model list</field>
+            <field name="res_model">passengers.model</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!--  Top menu item  -->
+        <!--     <menuitem name="irctc_menu" id="menu_id"/> -->
+        <!--  action  -->
+<!--        <menuitem name="passengers" id="passengers_id" parent="menu_id" action="passengers_action_window"/>-->
+    </data>
+</odoo>

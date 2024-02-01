@@ -1,0 +1,27 @@
+<odoo>
+   <data>
+<!--  explicit list view definition  -->
+        <record model="ir.ui.view" id="station_list">
+            <field name="name">station_model list</field>
+            <field name="model">station.model</field>
+            <field name="arch" type="xml">
+               <tree>
+                 <field name="station_name"/>
+<!--                 <field name="station_id"/>-->
+<!--                 <field name="station_state"/>-->
+<!--                 <field name="station_city"/>-->
+               </tree>
+            </field>
+        </record>
+    <!--  actions opening views on models  -->
+        <record model="ir.actions.act_window" id="station_action_window">
+            <field name="name">station_model list</field>
+            <field name="res_model">station.model</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    <!--  Top menu item  -->
+    <!--     <menuitem name="irctc_menu" id="menu_id"/> -->
+    <!--  action  -->
+<!--        <menuitem name="station" id="station_id" parent="menu_id" action="station_action_window"/>-->
+   </data>
+</odoo>
